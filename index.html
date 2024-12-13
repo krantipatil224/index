@@ -117,13 +117,13 @@
     }
 
     .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
+      display: flex;
+      justify-content: space-between;
       margin-top: 40px;
     }
 
     .product-card {
+      width: 18%;
       background: white;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -240,7 +240,13 @@
       }
 
       .product-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .product-card {
+        width: 90%;
+        margin-bottom: 20px;
       }
 
       .contact-details {
@@ -260,6 +266,7 @@
 
       .product-card {
         padding: 15px;
+        width: 100%;
       }
 
       .hero h1 {
@@ -287,15 +294,6 @@
     <a href="#products" class="cta-button">Explore Products</a>
   </section>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Products</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
   <section id="products">
     <h1>Our Products</h1>
     <div class="product-grid">
@@ -326,12 +324,8 @@
       </div>
     </div>
   </section>
-</body>
-</html>
 
-
-
-  <section id="contact">
+   <section id="contact">
     <h1>Contact Us</h1>
     <div class="contact-container">
       <div class="contact-details">
@@ -340,17 +334,18 @@
         Address: 798 Vetal Peth Bhor,<br>
         Tal-Bhor, Dist-Pune, Pin- 412206<br>
         <a href="https://www.google.com/maps" target="_blank">View on Google Maps</a>
-      </div>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18035.03181956509!2d73.83261002239206!3d18.145552158617924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc28ad26496e4b9%3A0xb314373f03b6bc9f!2sBhor%2C%20Maharashtra%20412206!5e0!3m2!1sen!2sin!4v1734087364138!5m2!1sen!2sin" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+     </div>
       <div class="contact-details">
-        <h2>Phone</h2>
+        <h2>contact-details</h2>
         <p>+917387358969</p>
-      </div>
-      <div class="contact-details">
-        <h2>Email</h2>
-        <p>assenterprises27@gmail.com</p>
+<p>assenterprises27@gmail.com</p>
 <p>srshinde2761999@gmail.com</p>
       </div>
-    </div>
+     
+    
   </section>
 
   <footer>
